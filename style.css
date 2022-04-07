@@ -1,0 +1,56 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
+  background: #e3edf7;
+}
+.container p {
+  letter-spacing: 4px;
+  font-size: 32px;
+  color: #777;
+  margin: -250px 0px 100px;
+}
+.container input {
+  width: 0;
+  height: 0;
+}
+.container input::before {
+  color: #777;
+  width: 160px;
+  height: 160px;
+  font-size: 52px;
+  content: "\f011";
+  font-family: "FontAwesome";
+  background: #e3edf7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  transform: translateX(-80px);
+  -webkit-transform: translateX(-80px);
+  -moz-transform: translateX(-80px);
+  -ms-transform: translateX(-80px);
+  -o-transform: translateX(-80px);
+  box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0, 0.3),
+    inset -4px -4px 6px -1px rgba(255, 255, 255, 0.7),
+    -0.5px -0.5px 0px rgba(255, 255, 255, 1),
+    0.5px 0.5px 0px rgba(0, 0, 0, 0.15), 0px 12px 10px 10px rgba(0, 0, 0, 0.05);
+}
+.container input:checked:before {
+  color: #4fce5d;
+  box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.3),
+    -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
+}
